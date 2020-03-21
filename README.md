@@ -8,7 +8,6 @@ This program automates this process! Give it a MIDI file you want to edit, and a
 There are still a number of edge cases to accomidate for and issues to fix, so it can't fix EVERYTHING about every MIDI file. However, this will likely save you a bit of work when you're making songs. 
 
 ## Installation
-
 1) Download AllaganHarp.exe from the [releases page.](https://github.com/BuildABuddha/AllaganHarp/releases)
 
 2) Move AllaganHarp.exe to the same directory as FFBardMusicPlayer.exe. This is so that it has access to the "songs" directory where you hopefully store all your MIDI files.
@@ -16,7 +15,6 @@ There are still a number of edge cases to accomidate for and issues to fix, so i
 3) That's it! 
 
 ## Usage
-
 1) Double click on AllaganHarp.exe.
 
 2) The program will ask for the name of the file you want to arpeggiate. I would reccomend copy/pasting it in. 
@@ -26,3 +24,10 @@ There are still a number of edge cases to accomidate for and issues to fix, so i
 4) Select how long you want your arpeggio spacing to be. It will reccomend 0.035, which has worked best for me in my personal testing. If you are not running consistantly at 60 FPS, you may need to raise this number. 
 
 5) If all things worked as planned, it should get to work creating your new MIDI file and save it in your "songs" directory! 
+
+## Best Practices
+Right now, the program looks for chords by looking for "note_on" messages that start exactly on the same tick. Usually this is enough, but sometimes notes start 1 tick after another note in the chord, and this can mess things up. There are plans in the future to have it look for chords where some of the notes might be a tick or two off. If a chord doesn't get arpeggiated right, go back to the original file and make sure all the notes start on the same tick.
+
+The program won't adjust your octaves. You'll have to do that yourself. The default range for Bard Music Player is C3 to C6, so I would reccomend fixing your song so it's within those three octaves before you feed it to AllaganHarp. 
+
+Lastly, AllaganHarp reduces all notes to length 0 for simplicity. This might change in the future, but for now, the best way to deal with this is to simply switch your midi's instrument to the Orchestral Harp, an instrument that has reverb independant of the length of the note. It also sounds very close to what the in-game harp sounds like, so you get a nice idea of what it'll sound like! 
