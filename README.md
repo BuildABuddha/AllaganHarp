@@ -21,7 +21,7 @@ There are still a number of edge cases to accomidate for and issues to fix, so i
 
 2) The program will ask for the name of the file you want to arpeggiate. I would reccomend copy/pasting it in. 
 
-3) It will then ask you what the new .mid file will be named. By default, it will simply add " (Harp)" to the end of the filename. 
+3) It will then ask you what the new .mid file will be named. By default, it will simply add " (Harp).mid" to the end of the filename. 
 
 4) Select how long you want your arpeggio spacing to be. It will reccomend 0.035, which has worked best for me in my personal testing. If you are not running consistantly at 60 FPS, you may need to raise this number. 
 
