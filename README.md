@@ -14,6 +14,8 @@ There are still a number of edge cases to accomidate for and issues to fix, so i
 
 3) That's it! 
 
+If you happen to move the .exe file somewhere else, it will still work, however it will make its own "songs" directory upon booting up for the first time, tell you to put a song in it, and then exit. You can do this if you prefer not to work with your Bard Music Player songs folder. 
+
 ## Usage
 1) Double click on AllaganHarp.exe.
 
